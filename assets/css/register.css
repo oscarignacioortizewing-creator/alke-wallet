@@ -1,52 +1,78 @@
-        body {
-            background: #f0f4f8;
-            font-family: 'Poppins', sans-serif;
-            min-height: 100vh;
-            display: flex;
-            align-items: center;
-        }
+      /* Centrado del contenedor App */
+      body {
+          background: #f0f4f8;
+          margin: 0;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          min-height: 100vh;
+          font-family: 'Poppins', sans-serif;
+      }
 
-        .card-register {
-            background: #ffffff;
-            border: none;
-            border-radius: 25px;
-            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.05);
-            padding: 40px;
-            width: 100%;
-            max-width: 450px;
-        }
+      .app-container {
+          background: #ffffff;
+          width: 100%;
+          max-width: 420px;
+          height: 90vh;
+          display: flex;
+          flex-direction: column;
+          box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+          border-radius: 30px;
+          overflow: hidden;
+          position: relative;
+      }
 
-        .form-control {
-            border-radius: 10px;
-            background: #f8f9fa;
-            border: 1px solid #eee;
-            padding: 12px 15px;
-            font-size: 0.9rem;
-        }
+      /* Área de Registro */
+      .card-register {
+          padding: 30px;
+      }
 
-        .form-control:focus {
-            background: #fff;
-            box-shadow: 0 0 0 0.2rem rgba(26, 115, 232, 0.1);
-            border-color: #1a73e8;
-        }
+      .brand-logo {
+          color: #1a73e8;
+          font-weight: 800;
+          font-size: 1.8rem;
+          letter-spacing: -1px;
+      }
 
-        .btn-register {
-            background: #1a73e8;
-            border: none;
-            border-radius: 12px;
-            padding: 12px;
-            font-weight: 600;
-            transition: 0.3s;
-        }
+      /* Inputs con estilo moderno */
+      .form-control {
+          border-radius: 12px;
+          background: #f8f9fa;
+          border: 2px solid transparent;
+          padding: 12px 15px;
+          height: auto;
+          font-size: 0.9rem;
+          transition: 0.3s;
+      }
 
-        .btn-register:hover {
-            background: #1557b0;
-            transform: translateY(-2px);
-        }
+      .form-control:focus {
+          background: #fff;
+          border-color: #1a73e8;
+          box-shadow: 0 0 0 0.2rem rgba(26, 115, 232, 0.1);
+      }
 
-        .brand-logo {
-            color: #1a73e8;
-            font-weight: 800;
-            font-size: 1.5rem;
-            margin-bottom: 5px;
-        }
+      .btn-register {
+          background: #1a73e8;
+          border: none;
+          border-radius: 12px;
+          padding: 12px;
+          font-weight: 600;
+          box-shadow: 0 4px 12px rgba(26, 115, 232, 0.2);
+      }
+
+      .btn-register:active {
+          transform: scale(0.98);
+      }
+
+      /* Footer anclado */
+      .app-footer {
+          padding: 15px;
+          background: #f8f9fa;
+          border-top: 1px solid #eee;
+      }
+
+      .app-footer a {
+          color: #1a73e8;
+          text-decoration: none;
+          font-weight: 600;
+      }
