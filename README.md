@@ -8,18 +8,24 @@ La aplicación permite realizar las operaciones esenciales de una fintech:
 
 * **Registro e Inicio de Sesión:** Acceso seguro mediante credenciales de usuario.
 
+  <img width="408" height="825" alt="image" src="https://github.com/user-attachments/assets/630c4c40-79be-4d04-a409-9c3fe1ed858d" />
+  <img width="425" height="821" alt="image" src="https://github.com/user-attachments/assets/50323e2f-412b-4ef7-bcdb-758cd1f1adf9" />
 
 * **Gestión de Saldo:** Visualización del saldo disponible en tiempo real.
 
+<img width="424" height="824" alt="image" src="https://github.com/user-attachments/assets/eb76d089-3fe3-451d-a84b-24da1ec7d372" />
 
 * **Administración de Fondos:** Funcionalidades dinámicas para realizar depósitos y retiros.
 
+  <img width="423" height="832" alt="image" src="https://github.com/user-attachments/assets/e9635073-6d92-4956-8b83-1e788c65b852" />
+  <img width="424" height="824" alt="image" src="https://github.com/user-attachments/assets/9d3c408b-4932-4798-b601-2f6fafd46b79" />
 
 * **Envío de Dinero:** Simulación de transferencia de fondos a otras cuentas.
-
+<img width="424" height="824" alt="image" src="https://github.com/user-attachments/assets/e18ba46c-dab6-4076-9410-c4c8233be4fa" />
+<img width="502" height="299" alt="image" src="https://github.com/user-attachments/assets/6be1bbc4-decf-4007-bf46-c09155031861" />
 
 * **Historial de Transacciones:** Registro completo y detallado de todos los movimientos realizados.
-
+<img width="479" height="792" alt="image" src="https://github.com/user-attachments/assets/6110f603-ab4a-4c61-849d-95283d95f237" />
 
 
 ## 🛠️ Tecnologías Utilizadas
