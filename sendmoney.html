@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alke Wallet - Enviar Dinero</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/sendmoney.css">
+
+</head>
+
+<body>
+
+    <div class="container transfer-container">
+        <div class="row justify-content-center">
+            <div class="col-md-6 mb-4">
+                <div class="card-custom h-100">
+                    <h5 class="font-weight-bold mb-4">Seleccionar Destinatario</h5>
+                    <input type="text" id="busc" class="form-control mb-4 bg-light border-0"
+                        placeholder="Buscar por nombre o RUT...">
+
+                    <div id="listaContactos" class="scroll-area">
+                    </div>
+
+                    <button class="btn btn-outline-primary btn-block btn-sm mt-4 font-weight-bold"
+                        onclick="$('#modNuevo').modal('show')">
+                        + Agregar Nuevo Contacto
+                    </button>
+                </div>
+            </div>
+
+            <div class="col-md-5 mb-4">
+                <div class="card-custom text-center" id="panelEnvio" style="display:none;">
+                    <div class="header-icon mb-3">
+                        <h2 class="mb-0">💸</h2>
+                    </div>
+                    <h5 class="font-weight-bold">Monto a Enviar</h5>
+                    <p class="text-muted small">Enviando a: <span id="destinatarioNombre"
+                            class="text-primary font-weight-bold"></span></p>
+
+                    <div id="alert-box"></div>
+
+                    <form id="sendForm">
+                        <div class="d-flex align-items-center justify-content-center mb-4">
+                            <span class="h3 mr-2 text-muted">$</span>
+                            <input type="number" id="montoEnvio" class="amount-input" placeholder="0" required min="1">
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-block btn-send">Confirmar
+                            Transferencia</button>
+                    </form>
+                </div>
+
+                <div class="card-custom text-center py-5" id="panelVacio">
+                    <p class="text-muted">Selecciona un contacto de la lista para transferir dinero.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="text-center mt-3">
+            <a href="menu.html" class="text-muted small">← Volver al Menú Principal</a>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modNuevo" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content border-0" style="border-radius: 20px;">
+                <div class="modal-body p-4">
+                    <h5 class="font-weight-bold mb-4 text-center">Nuevo Destinatario</h5>
+                    <form id="addCForm">
+                        <input type="text" id="cnom" class="form-control mb-3" placeholder="Nombre completo" required>
+                        <input type="text" id="crut" class="form-control mb-4" placeholder="RUT (ej: 12.345.678-9)"
+                            required>
+                        <button type="submit" class="btn btn-primary btn-block">Guardar Contacto</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./assets/js/sendmoney.js"></script>
+</body>
+
+</html>

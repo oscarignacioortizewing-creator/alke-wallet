@@ -1,0 +1,46 @@
+/* Ajuste de cuerpo para formato centrado */
+body {
+    background: #dfe6e9;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+
+.app-container {
+    background: white;
+    width: 100%;
+    max-width: 480px; /* Formato móvil */
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    box-shadow: 0 0 20px rgba(0,0,0,0.05);
+}
+
+/* Sello de agua centrado */
+.watermark {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* Reemplaza la URL por tu imagen real */
+    background: url('../img/transaction.jpg') center center no-repeat;
+    background-size: 50%; /* Tamaño del logo en el fondo */
+    opacity: 0.04; /* Muy sutil para que sea legible */
+    z-index: 0;
+    pointer-events: none;
+}
+
+.page-header, .container, .app-footer {
+    position: relative;
+    z-index: 1; /* Asegura que el texto esté sobre el sello */
+}
+
+.app-footer {
+    padding: 20px;
+    text-align: center;
+    background: #f8f9fa;
+    border-top: 1px solid #eee;
+    margin-top: auto;
+}

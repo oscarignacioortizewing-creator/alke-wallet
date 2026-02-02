@@ -1,0 +1,81 @@
+/* Centrado del contenedor en la pantalla */
+body {
+    background: #f0f4f8; /* Un fondo neutro ligeramente distinto al blanco */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* El "cuerpo" de la App */
+.app-container {
+    background: #ffffff;
+    width: 100%;
+    max-width: 420px; /* Ancho de un smartphone */
+    height: 90vh; /* Altura de la ventana */
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+    border-radius: 30px; /* Bordes redondeados de App moderna */
+    overflow: hidden;
+    position: relative;
+}
+
+/* Área de contenido con scroll si es necesario */
+main.container {
+    overflow-y: auto;
+    padding-bottom: 20px;
+}
+
+/* Tarjeta de saldo */
+.card-balance {
+    background: linear-gradient(135deg, #1a73e8 0%, #0d47a1 100%);
+    color: white;
+    border: none;
+    border-radius: 20px;
+    padding: 30px 20px;
+    margin-top: 10px;
+    box-shadow: 0 8px 15px rgba(26, 115, 232, 0.2);
+}
+
+/* Opciones de navegación */
+.nav-option {
+    background: #f8f9fa;
+    border: 1px solid #eef0f2;
+    border-radius: 18px;
+    padding: 20px 10px;
+    text-align: center;
+    transition: all 0.2s ease;
+    cursor: pointer;
+}
+
+.nav-option:active {
+    background: #e9ecef;
+    transform: scale(0.96);
+}
+
+.icon-box {
+    font-size: 1.8rem;
+}
+
+/* Footer anclado abajo */
+.app-footer {
+    padding: 20px;
+    text-align: center;
+    background: #ffffff;
+    border-top: 1px solid #f0f0f0;
+}
+
+.app-footer a {
+    text-decoration: none;
+    font-weight: 600;
+}
+
+/* Estilo para la barra de navegación superior */
+.navbar-custom {
+    background: white;
+    border-bottom: 1px solid #f0f0f0;
+}
