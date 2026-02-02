@@ -1,79 +1,93 @@
-       body {
-            background: #f0f4f8;
-            font-family: 'Poppins', sans-serif;
-        }
+/* Centrado del contenedor App */
+body {
+    background: #f0f4f8;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: 'Poppins', sans-serif;
+}
 
-        .transfer-container {
-            min-height: 100vh;
-            padding: 40px 0;
-        }
+.app-container {
+    background: #ffffff;
+    width: 100%;
+    max-width: 420px;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+    border-radius: 30px;
+    overflow: hidden;
+    position: relative;
+}
 
-        .card-custom {
-            background: #ffffff;
-            border: none;
-            border-radius: 25px;
-            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.05);
-            padding: 30px;
-        }
+/* Área de transferencia */
+.transfer-container {
+    overflow-y: auto;
+}
 
-        .contact-item {
-            border-radius: 15px;
-            transition: 0.2s;
-            cursor: pointer;
-            border: 1px solid transparent;
-            margin-bottom: 8px;
-        }
+.card-custom {
+    background: #f8f9fa;
+    border-radius: 20px;
+    padding: 20px;
+    border: 1px solid #eee;
+}
 
-        .contact-item:hover {
-            background: #f8f9fa;
-            border-color: #1a73e8;
-        }
+/* Lista de contactos con scroll interno */
+.scroll-area {
+    max-height: 180px;
+    overflow-y: auto;
+    padding-right: 5px;
+}
 
-        .contact-item.active {
-            background: #e8f0fe;
-            border-color: #1a73e8;
-        }
+/* Estilo para los items de contacto (suponiendo que usas estas clases en JS) */
+.contacto-item {
+    background: white;
+    padding: 10px 15px;
+    border-radius: 12px;
+    margin-bottom: 8px;
+    cursor: pointer;
+    transition: 0.2s;
+    border: 1px solid transparent;
+}
 
-        .avatar {
-            width: 45px;
-            height: 45px;
-            background: #1a73e8;
-            color: white;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-weight: 600;
-        }
+.contacto-item:hover,
+.contacto-item.active {
+    border-color: #1a73e8;
+    background: #e3f2fd;
+}
 
-        .amount-input {
-            font-size: 2rem;
-            font-weight: 600;
-            text-align: center;
-            border: none;
-            border-bottom: 2px solid #eee;
-            color: #1a73e8;
-            outline: none;
-            width: 100%;
-            margin-bottom: 20px;
-        }
+/* Input de monto */
+.amount-input {
+    border: none;
+    border-bottom: 2px solid #1a73e8;
+    font-size: 2rem;
+    font-weight: 600;
+    width: 140px;
+    text-align: center;
+    color: #1a73e8;
+    outline: none;
+    background: transparent;
+}
 
-        .btn-send {
-            background: #1a73e8;
-            border: none;
-            border-radius: 12px;
-            padding: 12px;
-            font-weight: 600;
-            transition: 0.3s;
-        }
+.btn-send {
+    background: #1a73e8;
+    border: none;
+    border-radius: 12px;
+    padding: 12px;
+    font-weight: 600;
+}
 
-        .btn-send:hover {
-            background: #1557b0;
-            transform: translateY(-2px);
-        }
+/* Footer */
+.app-footer {
+    padding: 15px;
+    background: #f8f9fa;
+    border-top: 1px solid #eee;
+}
 
-        .scroll-area {
-            max-height: 300px;
-            overflow-y: auto;
-            padding-right: 5px;
-        }
+.app-footer a {
+    color: #1a73e8;
+    text-decoration: none;
+    font-weight: 600;
+}

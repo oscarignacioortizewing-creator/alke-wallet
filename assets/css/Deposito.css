@@ -1,28 +1,90 @@
-        body { background: #f0f4f8; font-family: 'Poppins', sans-serif; }
-        .deposit-container { min-height: 100vh; display: flex; align-items: center; justify-content: center; }
-        .card-deposit {
-            background: #ffffff;
-            border: none;
-            border-radius: 25px;
-            box-shadow: 0 15px 35px rgba(0,0,0,0.05);
-            padding: 40px;
-            max-width: 400px;
-            width: 100%;
-        }
-        .header-icon {
-            width: 70px; height: 70px; background: #e8f5e9;
-            color: #2e7d32; border-radius: 50%; display: flex;
-            align-items: center; justify-content: center; margin: 0 auto 20px;
-            font-size: 1.8rem;
-        }
-        .amount-input {
-            font-size: 2.5rem; font-weight: 600; text-align: center;
-            border: none; border-bottom: 2px solid #eee;
-            color: #1a73e8; outline: none; transition: 0.3s; width: 100%;
-        }
-        .amount-input:focus { border-color: #1a73e8; color: #0d47a1; }
-        .btn-confirm {
-            background: #1a73e8; border: none; border-radius: 12px;
-            padding: 12px; font-weight: 600; transition: 0.3s;
-        }
-        .btn-confirm:hover { background: #1557b0; transform: translateY(-2px); }
+/* Centrado de la App en pantalla */
+body {
+    background: #f0f4f8;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: 'Poppins', sans-serif;
+}
+
+.app-container {
+    background: #ffffff;
+    width: 100%;
+    max-width: 420px;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+    border-radius: 30px;
+    overflow: hidden;
+    position: relative;
+}
+
+/* Estilo de la tarjeta de depósito */
+.deposit-container {
+    padding: 30px;
+}
+
+.card-deposit {
+    background: #fff;
+    border-radius: 20px;
+}
+
+.header-icon {
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+/* Input de monto estilizado */
+.amount-input {
+    border: none;
+    border-bottom: 2px solid #e0e0e0;
+    font-size: 2.5rem;
+    font-weight: 600;
+    width: 150px;
+    text-align: center;
+    color: #1a73e8;
+    transition: 0.3s;
+    outline: none;
+}
+
+.amount-input:focus {
+    border-color: #1a73e8;
+}
+
+/* Quitar flechas del input number */
+.amount-input::-webkit-inner-spin-button,
+.amount-input::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.btn-confirm {
+    background: #1a73e8;
+    border: none;
+    border-radius: 12px;
+    padding: 14px;
+    font-weight: 600;
+    margin-top: 20px;
+    box-shadow: 0 4px 12px rgba(26, 115, 232, 0.2);
+}
+
+.btn-confirm:active {
+    transform: scale(0.98);
+}
+
+/* Footer anclado */
+.app-footer {
+    padding: 15px;
+    background: #f8f9fa;
+    border-top: 1px solid #eee;
+}
+
+.app-footer a {
+    color: #1a73e8;
+    text-decoration: none;
+    font-weight: 600;
+}
